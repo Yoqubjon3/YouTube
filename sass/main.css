@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+}
+header i {
+  font-size: 28px;
+}
+header .navbar__left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header .navbar__left img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header a {
+  text-decoration: none;
+  color: #030303;
+}
+header .navbar__center form {
+  display: flex;
+  align-items: center;
+}
+header .navbar__center form input {
+  border: none;
+  border: 1px solid rgb(216, 214, 214);
+  height: 40px;
+  width: 538px;
+  border-radius: 2px 0 0 2px;
+  padding: 0 5px;
+  outline: none;
+}
+header .navbar__center form input:focus {
+  border: 1px solid rgb(40, 40, 255);
+}
+header .navbar__center form button:nth-of-type(1) {
+  width: 64px;
+  height: 40px;
+  border: none;
+  border: 1px solid rgb(216, 214, 214);
+  background: none;
+  background-color: #f8f8f8;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+header .navbar__center form button:nth-of-type(1) i {
+  font-size: 30px;
+}
+header .navbar__center form button:nth-of-type(1):hover {
+  background-color: #f3f3f3;
+}
+header .navbar__center form .mic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+header .navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+header .navbar__right .account img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(105, 105, 105);
+  border-radius: 10px;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+section .mainBody {
+  display: flex;
+  height: calc(100vh - 70px);
+  overflow: hidden;
+  margin-right: 5px;
+}
+section .mainBody .sidebar {
+  width: 300px;
+  background-color: white;
+  overflow-y: scroll;
+}
+section .mainBody .sidebar .sidebar__categories {
+  margin: 24px 0;
+  margin-right: 5px;
+}
+section .mainBody .sidebar .sidebar__categories .sidebar__category {
+  margin-bottom: 10px;
+}
+section .mainBody .sidebar .sidebar__categories .sidebar__category a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 16px;
+  gap: 22px;
+  color: black;
+}
+section .mainBody .sidebar .sidebar__categories .sidebar__category a span {
+  font-size: 15px;
+}
+section .mainBody .sidebar .sidebar__categories .sidebar__category a:hover {
+  background-color: rgb(247, 247, 247);
+}
+section .mainBody .sidebar .sidebar__categories .sidebar__category .active {
+  background-color: rgb(221, 219, 219);
+  font-weight: 600;
+}
+section .mainBody .sidebar .sidebar__categories .sidebar__category .active:hover {
+  background-color: rgb(228, 227, 227);
+}
+section .mainBody .sidebar .sidebar__categories h4 {
+  color: rgb(92, 91, 91);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+section .mainBody .sidebar .sidebar__categories .channel {
+  display: flex;
+}
+section .mainBody .sidebar .sidebar__categories .channel a img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+section .mainBody .sidebar hr {
+  opacity: 0.3;
+}
+section .mainBody .sidebar .sidebar__categories__footer {
+  margin-top: 20px;
+}
+section .mainBody .sidebar .sidebar__categories__footer .sidebar__category__footer {
+  margin-bottom: 20px;
+}
+section .mainBody .sidebar .sidebar__categories__footer .sidebar__category__footer a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: rgb(95, 94, 94);
+  font-size: 14px;
+}
+section .mainBody .sidebar .sidebar__categories__footer .sidebar__category__footer a:hover {
+  text-decoration: underline;
+}
+section .mainBody .sidebar .sidebar__categories__footer p {
+  color: rgb(117, 116, 116);
+  font-size: 12px;
+}
+section .content {
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  border-top: 1px solid rgb(187, 187, 187);
+}
+section .content__one {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+section .content__one .videos {
+  margin-top: 16px;
+}
+section .content__one .videos .shapka {
+  width: 253px;
+  height: 142px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+section .content__one .date__channel {
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+  width: 253px;
+}
+section .content__one .date__channel img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+section .content__one .date__channel .data__text h1 {
+  color: black;
+  font-size: 17px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+section .content__one .date__channel .data__text .channel_name {
+  color: rgb(102, 102, 102);
+  margin-bottom: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+}
+section .content__one .date__channel .data__text .channel_name:hover {
+  color: black;
+}
+section .content__one .date__channel .data__text .views {
+  display: flex;
+  gap: 10px;
+  color: rgb(102, 102, 102);
+}
+section .content__two {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+}
+section .content__two .videos {
+  margin-top: 16px;
+}
+section .content__two .videos .shapka {
+  width: 253px;
+  height: 142px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+section .content__two .date__channel {
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+  width: 253px;
+}
+section .content__two .date__channel img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+section .content__two .date__channel .data__text h1 {
+  color: black;
+  font-size: 17px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+section .content__two .date__channel .data__text .channel_name {
+  color: rgb(102, 102, 102);
+  margin-bottom: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+}
+section .content__two .date__channel .data__text .channel_name:hover {
+  color: black;
+}
+section .content__two .date__channel .data__text .views {
+  display: flex;
+  gap: 10px;
+  color: rgb(102, 102, 102);
+}/*# sourceMappingURL=main.css.map */

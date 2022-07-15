@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  padding: 0 16px;
+}
+header {
+  i {
+    font-size: 28px;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  .navbar__left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    img {
+      width: 100px;
+      object-fit: cover;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #030303;
+  }
+  .navbar__center {
+    form {
+      display: flex;
+      align-items: center;
+      input {
+        border: none;
+        border: 1px solid rgb(216, 214, 214);
+        height: 40px;
+        width: 538px;
+        border-radius: 2px 0 0 2px;
+        padding: 0 5px;
+        outline: none;
+      }
+      input:focus {
+        border: 1px solid rgb(40, 40, 255);
+      }
+      button:nth-of-type(1) {
+        width: 64px;
+        height: 40px;
+        border: none;
+        border: 1px solid rgb(216, 214, 214);
+        background: none;
+        background-color: #f8f8f8;
+        border-radius: 0 2px 2px 0;
+        cursor: pointer;
+        i {
+          font-size: 30px;
+        }
+      }
+      button:nth-of-type(1):hover {
+        background-color: #f3f3f3;
+      }
+      .mic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .navbar__right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    .account {
+      img {
+        object-fit: cover;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(105, 105, 105);
+  border-radius: 10px;
+}
+section {
+  display: flex;
+  width: 100%;
+  .mainBody {
+    display: flex;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    margin-right: 5px;
+    .sidebar {
+      width: 300px;
+      background-color: white;
+      overflow-y: scroll;
+      .sidebar__categories {
+        margin: 24px 0;
+        margin-right: 5px;
+        .sidebar__category {
+          margin-bottom: 10px;
+          a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 10px 16px;
+            gap: 22px;
+            color: black;
+            span {
+              font-size: 15px;
+            }
+          }
+          a:hover {
+            background-color: rgb(247, 247, 247);
+          }
+          .active {
+            background-color: rgb(221, 219, 219);
+            font-weight: 600;
+          }
+          .active:hover {
+            background-color: rgb(228, 227, 227);
+          }
+        }
+        h4 {
+          color: rgb(92, 91, 91);
+          font-size: 14px;
+          margin-bottom: 4px;
+        }
+        .channel {
+          display: flex;
+          a {
+            img {
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      hr {
+        opacity: 0.3;
+      }
+      .sidebar__categories__footer {
+        margin-top: 20px;
+        .sidebar__category__footer {
+          margin-bottom: 20px;
+          a {
+            margin-right: 5px;
+            text-decoration: none;
+            color: rgb(95, 94, 94);
+            font-size: 14px;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+        p {
+          color: rgb(117, 116, 116);
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .content {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    border-top: 1px solid rgb(187, 187, 187);
+
+  }
+  .content__one {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    .videos {
+      margin-top: 16px;
+      .shapka {
+        width: 253px;
+        height: 142px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
+    .date__channel {
+      display: flex;
+      margin-top: 10px;
+      gap: 15px;
+      width: 253px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .data__text {
+        h1 {
+          color: black;
+          font-size: 17px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+        .channel_name {
+          color: rgb(102, 102, 102);
+          margin-bottom: 3px;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 15px;
+        }
+        .channel_name:hover {
+          color: black;
+        }
+        .views {
+          display: flex;
+          gap: 10px;
+          color: rgb(102, 102, 102);
+        }
+      }
+    }
+    margin-bottom: 40px;
+  }
+  .content__two {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    .videos {
+      margin-top: 16px;
+      .shapka {
+        width: 253px;
+        height: 142px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
+    .date__channel {
+      display: flex;
+      margin-top: 10px;
+      gap: 15px;
+      width: 253px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .data__text {
+        h1 {
+          color: black;
+          font-size: 17px;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+        .channel_name {
+          color: rgb(102, 102, 102);
+          margin-bottom: 3px;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 15px;
+        }
+        .channel_name:hover {
+          color: black;
+        }
+        .views {
+          display: flex;
+          gap: 10px;
+          color: rgb(102, 102, 102);
+        }
+      }
+    }
+  }
+} //section
